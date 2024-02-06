@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25%,25%,25%,25%;
+    grid-template-rows: 15%,25%,25%,25%,10%;
+    grid-template-areas:
+    'hd hd hd hd'
+    'sc1 sc1 sc1 sc1'
+    'sc2 sc2 sc2 sc2'
+    'sc3 sc3 sc3 sc3'
+    'ft ft ft ft'
+}
+
+header{
+    grid-area: hd;
+    background-color: blue;
+}
+.friends{
+    grid-area: sc1;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+.reviews{
+    grid-area: sc2;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+}
+.new{
+    grid-area: sc3;
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    grid-area: ft;
+    background-color: purple;
+}
+
+.album{
+    height: 150px;
+    margin: 2px;
+    object-fit: cover;
+}
+.review{
+    background-color: white;
+    margin: 8px;
+    padding: 2px;
+}
