@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jukeboxd: Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <div class="wrapper-home">
     <header>
+      <div onclick="changeMenu()" class="menu-button">
+        <i class="material-icons">menu</i>
+      </div>
       <img src="" alt="Jukeboxd Logo">
       <h2>Jukeboxd</h2>
-      <h4 class="menues">Home</h4>
-      <h4 class="menues">Rankings</h4>
-      <h4 class="menues">Profile</h4>
-      <h4 class="menues">search</h4>
+      <h4 class="menues hide">Home</h4>
+      <h4 class="menues hide">Rankings</h4>
+      <h4 class="menues hide">Profile</h4>
+      <h4 class="menues hide">search</h4>
     </header>
     <nav class="menu">
       <ul>
@@ -41,13 +45,13 @@
           <p>user</p>
           <p class="stars">✰✰</p>
         </article>
-        <article>
+        <article class="hide">
           <img class="album" src="img/weezerfr.jpg" alt="Placeholder Album">
           <img src="" alt="profile-picture">
           <p>user</p>
           <p class="stars">✰✰✰✰✰</p>
         </article>
-        <article>
+        <article class="hide">
           <img class="album" src="img/weezerfr.jpg" alt="Placeholder Album">
           <img src="" alt="profile-picture">
           <p>user</p>
@@ -67,7 +71,7 @@
           <p>5/5</p>
           <img class="album" src="img/weezerfr.jpg" alt="album">
         </article>
-        <article class="review">
+        <article class="review hide">
           <img src="" alt="profile picture">
           <h4>user</h4>
           <p>This album is not good.</p>
@@ -91,12 +95,12 @@
           <p>Weezer</p>
           <p>Weezer</p>
         </article>
-        <article>
+        <article class="hide">
           <img class="album" src="img/weezerfr.jpg" alt="Placeholder Album">
           <p>Weezer</p>
           <p>Weezer</p>
         </article>
-        <article>
+        <article class="hide">
           <img class="album" src="img/weezerfr.jpg" alt="Placeholder Album">
           <p>Weezer</p>
           <p>Weezer</p>
