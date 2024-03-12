@@ -9,6 +9,9 @@
 <body>
     <div class="wrapper-ranking">
         <header>
+            <div onclick="changeMenu()" class="menu-button">
+              <i class="material-icons">menu</i>
+            </div>
             <img src="" alt="Jukeboxd Logo">
             <h2>Jukeboxd</h2>
             <h4 class="menues hide"><a href="http://127.0.0.1:5500/index.html">Home</a></h4>
@@ -17,13 +20,14 @@
             <h4 class="menues hide">search</h4>
         </header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">search</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rankings</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </nav>    
+        <ul>
+            <li><a href="#">search</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/ranking.html">Rankings</a></li>
+            <li><a href="http://127.0.0.1:5500/profile.html">Profile</a></li>
+        </ul>
+        </nav>
+        <div onclick="changeMenu()" class="fade-layer"></div>   
         <section class="section-heading">
             <h3>Top albums</h3>
         </section>    
