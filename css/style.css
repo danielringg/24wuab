@@ -26,7 +26,7 @@ body{
         width: 100vw;
         display: grid;
         grid-template-rows: 1% 25% 25% 25% fr;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 75% 25%;
         grid-template-areas:
         'hd hd'
         'sc1 sc1'
@@ -57,10 +57,13 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+.menu.show{
+    left:0vw;
+}
 .menu{
     height: 100vh;
     width: 50vw;
-    background: gray;
+    background: #161818;
     position: fixed;
     top: 0;
     left: -90vw;
@@ -121,6 +124,7 @@ aside{
 .profile{
     grid-area: sc1;
     display: flex;
+    padding: 10px;
 }
 .top-4{
     grid-area: sc2;
