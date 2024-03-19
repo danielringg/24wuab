@@ -8,6 +8,12 @@ body{
     .hide{
         display:none;
     }
+    .profile-picture{
+        height:50px;
+    }
+    .album{
+        height: 10px;
+    }
 }
 @media screen and (min-width:768px) {
     .wrapper-home{
