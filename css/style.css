@@ -9,12 +9,28 @@ body{
         display:none;
     }
     .profile-picture{
-        height:50px;
+        height:75px;
+        border-style:none;
+        border-radius: 50%;
     }
     .album{
-        height: 10px;
+        height: 100px;
     }
-}
+    body{
+        font-size: 0.75rem;
+    }
+    .review{
+        background-color: #161818;
+        padding: 10px;
+        display: flex;
+        align-items: space-around;
+    }
+    .album-list{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    }
 @media screen and (min-width:768px) {
     .wrapper-home{
         width: 100vw;
@@ -54,6 +70,31 @@ body{
     }
     .menu-button{
         display: none;
+    }
+    .album{
+        height: 150px;
+        margin: 2px;
+        object-fit: cover;
+    }
+    .profile-picture{
+        border-style:none;
+        border-radius: 50%;
+        height: 100px;
+    }
+    .review-text{
+        display: flex;
+        align-self: center;
+    }
+    .review{
+        background-color: #161818;
+        padding: 10px;
+        display: flex;
+        align-items: space-around;
+    }
+    .album-list{
+        display: flex;
+        justify-content: space-between;
+        flex: wrap;
     }
 }
 header{
@@ -97,10 +138,6 @@ header{
     padding-bottom: 2px;
     margin-left: 5%;
 }
-.album-list{
-    display: flex;
-    justify-content: space-evenly;
-}
 .reviews{
     margin: 10px;
     grid-area: sc2;
@@ -119,22 +156,6 @@ aside{
     grid-area: as;
     background-color:  #161818;
     padding: 10px;
-}
-.album{
-    height: 150px;
-    margin: 2px;
-    object-fit: cover;
-}
-.review{
-    background-color: #161818;
-    padding: 10px;
-    display: flex;
-    justify-items: space-evenly;
-}
-.profile-picture{
-    border-style:none;
-    border-radius: 50%;
-    height: 100px;
 }
 .profile{
     grid-area: sc1;
