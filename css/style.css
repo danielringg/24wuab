@@ -29,6 +29,10 @@ body{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-left: 40px;
+    }
+    .ranked-album{
+        flex-basis: 50%;
     }
     }
 @media screen and (min-width:768px) {
@@ -94,7 +98,11 @@ body{
     .album-list{
         display: flex;
         justify-content: space-between;
-        flex: wrap;
+        flex-wrap: wrap;
+        margin-left: 100px;
+    }
+    .ranked-album{
+        flex-basis: 25%;
     }
 }
 header{
