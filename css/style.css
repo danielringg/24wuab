@@ -3,6 +3,7 @@ body{
     color: white;
     background-color: #293132;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 @media screen and (max-width:767px){ 
     .hide{
@@ -12,6 +13,11 @@ body{
         height:75px;
         border-style:none;
         border-radius: 50%;
+    }
+    .small-profile-picture{
+        border-style:none;
+        border-radius: 50%;
+        height: 30px;
     }
     .album{
         height: 100px;
@@ -23,18 +29,39 @@ body{
         background-color: #161818;
         padding: 10px;
         display: flex;
-        align-items: space-around;
+        justify-content: space-around;
     }
     .album-list{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-left: 40px;
+        margin: 20px;    
     }
     .ranked-album{
         flex-basis: 50%;
     }
+    .wrapper-album{
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 10% 25% 25% 25% fr;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        'hd hd'
+        'sc1 sc4'
+        'sc3 as'
+        'sc2 sc2'
+        'ft ft'
     }
+    aside{
+        padding:10px;
+        margin: 10px;
+    }
+    .album-big{
+        grid-area: sc1;
+        width: 150px;
+        padding: 10px;
+    }
+}
 @media screen and (min-width:768px) {
     .wrapper-home{
         width: 100vw;
@@ -63,14 +90,25 @@ body{
         height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 15%,25%,25%,25%,10%;
-        grid-template-columns: 50%, 50%;
+        grid-template-rows: 15% 25% 25% 25% fr;
         grid-template-areas:
         'hd'
         'sc1'
         'sc2'
         'sc3'
         'ft'
+    }
+    .wrapper-album{
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 10% 25% 25% 25% fr;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas:
+        'hd hd hd'
+        'sc1 sc4 as'
+        'sc3 sc4 as'
+        'sc3 sc2 as'
+        'ft ft ft'
     }
     .menu-button{
         display: none;
@@ -85,6 +123,11 @@ body{
         border-radius: 50%;
         height: 100px;
     }
+    .small-profile-picture{
+        border-style:none;
+        border-radius: 50%;
+        height: 50px;
+    }
     .review-text{
         display: flex;
         align-self: center;
@@ -93,17 +136,36 @@ body{
         background-color: #161818;
         padding: 10px;
         display: flex;
-        align-items: space-around;
+        justify-content: space-around;
     }
     .album-list{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-left: 100px;
+        margin: 20px;
     }
     .ranked-album{
         flex-basis: 25%;
     }
+    .album-big{
+        grid-area: sc1;
+        width: 200px;
+        padding: 10px;
+    }
+}
+.tracklist{
+    grid-area: sc3;
+    background-color: #161818;
+    margin: 10px;
+    padding: 10px;
+}
+.album-info{
+    grid-area: sc4;
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    width: 80px;
 }
 header{
     grid-area: hd;
