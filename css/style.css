@@ -28,6 +28,7 @@ body{
     .review{
         background-color: #161818;
         padding: 10px;
+        margin-top: 10px;
         display: flex;
         justify-content: space-around;
     }
@@ -135,6 +136,7 @@ body{
     .review{
         background-color: #161818;
         padding: 10px;
+        margin-top: 10px;
         display: flex;
         justify-content: space-around;
     }
