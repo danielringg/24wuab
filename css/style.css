@@ -67,7 +67,7 @@ body{
     .wrapper-home{
         width: 100vw;
         display: grid;
-        grid-template-rows: 10% 25% 25% 25% fr;
+        grid-template-rows: 7% 30% 30% 30% 3%;
         grid-template-areas:
         'hd'
         'sc1'
@@ -78,7 +78,7 @@ body{
     .wrapper-profile{
         width: 100vw;
         display: grid;
-        grid-template-rows: 10% 25% 25% 25% fr;
+        grid-template-rows: 7% 20% 35% 35% 3%;
         grid-template-columns: 75% 25%;
         grid-template-areas:
         'hd hd'
@@ -91,12 +91,11 @@ body{
         height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 15% 25% 25% 25% fr;
+        grid-template-rows: 10% 10% 80% 3%; /* måste fixa det här */
         grid-template-areas:
         'hd'
         'sc1'
         'sc2'
-        'sc3'
         'ft'
     }
     .wrapper-album{
@@ -141,6 +140,7 @@ body{
         justify-content: space-around;
     }
     .album-list{
+        grid-area: sc2;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
