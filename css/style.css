@@ -91,7 +91,7 @@ body{
         height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 10% 10% 80% 3%; /* måste fixa det här */
+        grid-template-rows: 10% 10% 80%;
         grid-template-areas:
         'hd'
         'sc1'
@@ -101,7 +101,7 @@ body{
     .wrapper-album{
         width: 100vw;
         display: grid;
-        grid-template-rows: 10% 25% 25% 25% fr;
+        grid-template-rows: 10% 25% 25% 25%;
         grid-template-columns: 25% 50% 25%;
         grid-template-areas:
         'hd hd hd'
@@ -209,6 +209,7 @@ header{
 .section-heading{
     padding-bottom: 2px;
     margin-left: 5%;
+    font-size: 1.2rem;
 }
 .reviews{
     margin: 10px;
